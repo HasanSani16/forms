@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Information</title>
+</head>
+<body>
+
+<h2>Display Information</h2>
+
+<p>Name: <span id="displayName"></span></p>
+<p>Email: <span id="displayEmail"></span></p>
+<p>Password: <span id="displayPassword"></span></p>
+
+<script>
+    
+    document.getElementById("displayName").textContent = localStorage.getItem("name");
+    document.getElementById("displayEmail").textContent = localStorage.getItem("email");
+    document.getElementById("displayPassword").textContent = localStorage.getItem("password");
+</script>
+
+</body>
+</html>
